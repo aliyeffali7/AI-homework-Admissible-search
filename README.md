@@ -1,4 +1,4 @@
-# 🎮 Generalized Tic-Tac-Toe AI (m × m, k-in-a-row)
+#  Generalized Tic-Tac-Toe AI (m × m, k-in-a-row)
 
 This repository contains a modular implementation of a generalized Tic-Tac-Toe game engine and an adversarial AI agent capable of playing on boards of **any size**.  
 The system supports **Minimax**, **Alpha-Beta pruning**, and **depth-limited search** combined with a custom heuristic for scalable decision-making.
@@ -7,7 +7,7 @@ The project is structured for clarity, easy testing, and experimentation.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 core_game.py           # Game rules, move generation, turn logic, k-in-a-row detection
@@ -19,9 +19,9 @@ test_logic.py          # Automated tests (pytest)
 
 ---
 
-## 🧩 Components Overview
+##  Components Overview
 
-### 🟦 1. Game Engine — `core_game.py`
+###  1. Game Engine — `core_game.py`
 Implements the game mechanics:
 - board creation  
 - legal action generation  
@@ -35,7 +35,7 @@ Designed to support any configuration of **m** and **k**.
 
 ---
 
-### 🟥 2. Search Algorithms — `adversarial_search.py`
+###  2. Search Algorithms — `adversarial_search.py`
 Includes three main decision-making strategies:
 
 - **Minimax** — full adversarial search  
@@ -47,7 +47,7 @@ All functions share a consistent interface and operate directly on the game engi
 
 ---
 
-### 🟩 3. Heuristic Evaluation — `evaluation.py`
+###  3. Heuristic Evaluation — `evaluation.py`
 Used when the search depth is exceeded.  
 The heuristic identifies:
 - near-winning formations  
@@ -59,7 +59,7 @@ This allows the AI to handle larger boards intelligently.
 
 ---
 
-### 🟨 4. Game Runner — `run_game.py`
+###  4. Game Runner — `run_game.py`
 Interactive terminal interface.
 
 Start the game:
@@ -85,7 +85,7 @@ DEPTH = 4
 
 ---
 
-## 🧪 Test Suite — `test_logic.py`
+##  Test Suite — `test_logic.py`
 
 The test file validates:
 - board initialization  
@@ -108,7 +108,7 @@ pip install pytest
 
 ---
 
-## 🚀 Features
+## Features
 - Generalized board engine  
 - Deterministic, reproducible AI decisions  
 - Efficient search algorithm integration  
